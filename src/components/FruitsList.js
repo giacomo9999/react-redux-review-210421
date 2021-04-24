@@ -50,7 +50,7 @@ const FruitsList = () => {
 
   return (
     <div className="container-inner">
-      <div className="h-form">
+      <form className="h-form">
         <input
           type="text"
           placeholder="Search By Name"
@@ -58,15 +58,15 @@ const FruitsList = () => {
           onChange={onChangeSearchFruitName}
         />
         <button onClick={findByName}>Search By Name</button>
-      </div>
+      </form>
       <h2>FRUITS LIST</h2>
       <ul>
         {fruits &&
-          fruits.map((fruit, index) => {
+          fruits.map((fruit, index) => (
             <li onClick={setActiveFruit(fruit, index)} key={index}>
               {fruit.fruitName}
-            </li>;
-          })}
+            </li>
+          ))}
       </ul>
       <button onClick={removeAllFruits}>Remove All</button>
       <div>
@@ -76,6 +76,7 @@ const FruitsList = () => {
             <h3>{currentFruit.fruitColor}</h3>
             <h3>{currentFruit.fruitShape}</h3>
             <h3>{currentFruit.inStock}</h3>
+            <Link to={"/fruits/" + currentFruit.id}>EDIT</Link>
           </div>
         ) : (
           <div>
