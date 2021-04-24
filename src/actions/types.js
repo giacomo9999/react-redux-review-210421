@@ -1,0 +1,5 @@
+export const CREATE_FRUIT = "CREATE_FRUIT";
+export const RETRIEVE_FRUIT = "RETRIEVE_FRUIT";
+export const UPDATE_FRUIT = "UPDATE_FRUIT";
+export const DELETE_FRUIT = "DELETE_FRUIT";
+export const DELETE_ALL_FRUIT = "DELETE_ALL_FRUIT";
