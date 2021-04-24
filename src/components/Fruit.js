@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch } from "redux";
+import { useDispatch } from "react-redux";
 import { updateFruit, deleteFruit } from "../actions/fruits";
 import FruitDataService from "../services/FruitsService";
 

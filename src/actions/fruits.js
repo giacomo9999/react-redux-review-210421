@@ -52,7 +52,7 @@ export const deleteFruit = (id) => async (dispatch) => {
   }
 };
 
-export const deleteAllFruit = () => async (dispatch) => {
+export const deleteAllFruits = () => async (dispatch) => {
   try {
     const res = await FruitDataService.removeAll();
     dispatch({ type: DELETE_ALL_FRUITS, data: res.data });

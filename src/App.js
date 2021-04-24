@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import FruitsList from "./components/fruits-list.component";
-import AddFruit from "./components/add-fruit.component";
-import Fruit from "./components/fruit.component";
+import FruitsList from "./components/FruitsList";
+import AddFruit from "./components/AddFruit";
+import Fruit from "./components/Fruit";
 
 function App() {
   return (

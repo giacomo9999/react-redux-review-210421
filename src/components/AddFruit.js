@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { createFruit } from "..actions/fruits";
+import { createFruit } from "../actions/fruits";
 
 const AddFruit = () => {
   const initialFruitState = {
