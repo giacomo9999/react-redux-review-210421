@@ -32,6 +32,7 @@ const FruitsList = () => {
   const setActiveFruit = (fruit, index) => {
     setCurrentFruit(fruit);
     setCurrentIndex(index);
+    console.log("Current Index...", currentIndex);
   };
 
   const removeAllFruits = () => {

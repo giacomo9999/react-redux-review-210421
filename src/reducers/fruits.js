@@ -9,8 +9,8 @@ import {
 const initialState = [];
 
 function fruitReducer(fruits = initialState, action) {
-  console.log("fruitReducer...", initialState, action);
-  const [type, payload] = action;
+  console.log("fruitReducer action...", action);
+  const { type, payload } = action;
   switch (type) {
     case CREATE_FRUIT:
       return [...fruits, payload];
