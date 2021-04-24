@@ -44,43 +44,43 @@ const AddFruit = () => {
 
   return (
     <div className="container-inner">
-      submitted ? (
-      <div>
-        <h4>You Submitted Successfully!</h4>
-        <button onClick={newFruit}>Add A Fruit</button>
-      </div>
-      ):(
-      <form className="h-form">
-        <label className="h-label">Name</label>
-        <input
-          className="h-input"
-          type="text"
-          id="fruitName"
-          value={fruit.fruitName}
-          onChange={handleInputChange}
-          name="fruitName"
-        />
-        <label className="h-label">Color</label>
-        <input
-          className="h-input"
-          type="text"
-          id="fruitColor"
-          value={fruit.fruitColor}
-          onChange={handleInputChange}
-          name="fruitColor"
-        />
-        <label className="h-label">Shape</label>
-        <input
-          className="h-input"
-          type="text"
-          id="fruitShape"
-          value={fruit.fruitShape}
-          onChange={handleInputChange}
-          name="fruitShape"
-        />
-        <button onClick={saveFruit}>Submit</button>
-      </form>
-      )
+      {submitted ? (
+        <div>
+          <h4>You Submitted Successfully!</h4>
+          <button onClick={newFruit}>Add A Fruit</button>
+        </div>
+      ) : (
+        <form className="h-form">
+          <label className="h-label">Name</label>
+          <input
+            className="h-input"
+            type="text"
+            id="fruitName"
+            value={fruit.fruitName}
+            onChange={handleInputChange}
+            name="fruitName"
+          />
+          <label className="h-label">Color</label>
+          <input
+            className="h-input"
+            type="text"
+            id="fruitColor"
+            value={fruit.fruitColor}
+            onChange={handleInputChange}
+            name="fruitColor"
+          />
+          <label className="h-label">Shape</label>
+          <input
+            className="h-input"
+            type="text"
+            id="fruitShape"
+            value={fruit.fruitShape}
+            onChange={handleInputChange}
+            name="fruitShape"
+          />
+          <button onClick={saveFruit}>Submit</button>
+        </form>
+      )}
     </div>
   );
 };
